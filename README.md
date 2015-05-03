@@ -1,6 +1,6 @@
 # ChatApp
 
-I put a lot of heart in writing this application and I was enjoying it. Thanks for taking the time to reviewing it. I will not go into details here because the code must speak by himself.
+I put a lot of heart in writing this application and I was enjoying it. Thanks for taking the time to reviewing it. I love writing simple, clean and quality code. I will not go into details here because the code must speak by himself.
 
 Main points:
 
