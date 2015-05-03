@@ -4,7 +4,7 @@ I put a lot of heart in writing this application and I was enjoying it. Thanks f
 
 Main points:
 
-- Authentication. There are 3 authentication types ( global, per browser tab using query strings and per session using Forms Auth). You can change them in appSettings from web.config.
+- Authentication. There are 3 types of authentication ( global, per browser tab using query strings and per session using Forms Auth). You can change the current one in appSettings from web.config.
 
 - Security. Use Forms Authentication and HubUsernameProvider=FromUserIdentity (appSettings)
 
