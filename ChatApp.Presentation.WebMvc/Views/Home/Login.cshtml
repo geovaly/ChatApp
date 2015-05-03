@@ -1,0 +1,21 @@
+﻿@model ChatApp.Presentation.WebMvc.Models.LoginUser
+
+@{
+    ViewBag.Title = "Login";
+}
+
+@using (Html.BeginForm())
+{
+    <div id="form-container">
+        <h1>Skarpline Task 1</h1>
+        <div>@Html.ValidationSummary(true)</div>
+        <div>
+            @Html.ValidationMessageFor(x => x.Username)
+        </div>
+        <div>
+            @Html.LabelFor(x => x.Username)
+            @Html.TextBoxFor(x => x.Username, new { autofocus = "autofocus", required = "required" })
+            <input type="submit" value="Login" />
+        </div>
+    </div>
+}

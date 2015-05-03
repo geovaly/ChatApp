@@ -1,0 +1,29 @@
+﻿@{
+    ViewBag.Title = "Chat";
+}
+
+<div data-bind='visible: !isConnected()'> Chat loading... </div>
+
+<div style="display: none" data-bind="visible: isConnected" class="container-fluid">
+    <h1>Chat Room</h1>
+    @Html.Partial("Logout")
+    @Html.Partial("ConnectedUsers")
+    @Html.Partial("ChatMessages")
+    @Html.Partial("SendMessage")
+</div>
+
+@section scripts
+{
+    <script type="text/javascript" src="@Url.Content("/Js/chatRoom.js")"></script>
+    <script type="text/javascript" src="@Url.Content("/signalr/hubs")"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            ChatRoom.documentReady(
+                @Html.Raw(Json.Encode(ViewBag.Username)),
+                @Html.Raw(Json.Encode(QueryStrings.Username)));
+        });
+    </script>
+}
+
+

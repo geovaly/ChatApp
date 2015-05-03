@@ -1,0 +1,11 @@
+﻿<h2>Messages</h2>
+
+<ul data-bind="foreach: messages">
+    <li>
+        <b>
+            <span data-bind="text: username"> </span>
+            <span data-bind="text: timestamp.toLocaleTimeString()"> </span>
+        </b>
+        <span data-bind="text: content"> </span>
+    </li>
+</ul>

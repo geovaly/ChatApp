@@ -1,0 +1,15 @@
+﻿<h2>Users</h2>
+
+<ul data-bind="foreach: users">
+    <li>
+        <b>
+            <span data-bind="text: username"> </span>
+            <span data-bind="text: joinedAt.toLocaleTimeString()"> </span>
+        </b>
+
+        <span data-bind="visible: isTyping">
+            <b>is typing:</b>
+            <span data-bind="text: typing"> </span>
+        </span>
+    </li>
+</ul>

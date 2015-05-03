@@ -1,0 +1,9 @@
+﻿@using (Html.BeginForm(
+    "Logout",
+    "Home",
+    FormMethod.Post,
+    new { data_bind = "submit: logout" }))
+{
+    <span>Welcome </span><b>@ViewBag.Username</b>
+    <input type="submit" value="Logout">
+}
