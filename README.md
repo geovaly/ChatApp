@@ -6,7 +6,7 @@ Main points:
 
 - Authentication. There are 3 authentication types ( global, per browser tab using query strings and per session using Forms Auth). You can change them in appSettings from web.config.
 
-- Security. Use Forms Authentication and HubUsernameProvider=FromUserIdentity 
+- Security. Use Forms Authentication and HubUsernameProvider=FromUserIdentity (appSettings)
 
 - Thread Safety. Clients will not miss a message.
 
